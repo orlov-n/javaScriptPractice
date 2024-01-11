@@ -42,9 +42,9 @@ return order
 const listOrders = (order) => {
   return order.meals.map(meal => meal.name)
 }
+
 const listSpecialRequests = (order) => {
   let requests = []
-  console.log(order);
    order.meals.forEach(meal => {
     meal.specialRequests.forEach(request => requests.push(request))
   })
